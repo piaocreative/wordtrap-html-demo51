@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+
+.contact-banner {
+    .sub-title {
+        p {
+            font-size: 3.75rem !important;
+            line-height: 4rem;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        color: #8b8584;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .container {
+            padding: 0 !important;
+        }
+
+        .col-lg-6 {
+            padding: 0 !important;
+
+            p {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+#contact-info {
+    h5 {
+        color: #504a4a;
+
+        @include media-breakpoint-down(lg) {
+            margin: 1rem !important;
+        }
+    }
+}

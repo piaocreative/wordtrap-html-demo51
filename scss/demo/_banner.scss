@@ -1,0 +1,45 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#banner {
+    position: relative;
+
+    @media (min-width: 1200px) {
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .banner-wrap {
+        padding-left: 4.375rem;
+        padding-right: 4.375rem;
+    }
+
+    &.about-banner, &.contact-banner {
+        background-image: url(../images/banner/banner1.png);         
+        background-repeat: no-repeat;
+        background-size: cover;       
+        background-position: 50%;
+        height: auto;
+    }
+}

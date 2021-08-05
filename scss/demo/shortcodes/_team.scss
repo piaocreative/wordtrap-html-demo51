@@ -1,0 +1,40 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: team.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Team member Styles
+-----------------------------------------------------------------*/
+
+.team {
+    position: relative;
+    margin-bottom: 1.875rem;
+
+    .team-detail, .team-rating {
+        color: #b6b6b6;
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        text-align: center;
+        
+        .team-info {
+            text-align: center !important;
+        }
+    }
+
+    .team-name {
+        color: #5c5656;
+    }
+
+    .team-rating {
+
+        i {
+            color:$theme-color;
+        }
+
+    }
+}

@@ -1,0 +1,197 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about-banner-content, .about-content {
+	p {
+		font-size: 1.125rem;	
+		color: #958e8e;
+		line-height: 2rem;
+	}
+
+	h3 {
+		font-family: 'Great Vibes', cursive;
+	}
+}
+
+.about-banner-content {
+	padding-top: 15rem;
+
+	@include media-breakpoint-down(lg) {
+		padding-top: 0rem;
+	}
+}
+
+.about-content {
+	margin-bottom: -36rem;
+
+	img {
+		border-radius: 1rem;
+	}
+
+	.obverse {
+		position: relative;
+		bottom: 36rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		margin: 0rem !important;
+
+		.obverse {
+			bottom: 0;
+			padding: 2.5rem !important;
+		}
+
+		p {
+			margin: 0 !important;
+		}
+
+		.container {
+			padding: 0 !important;
+		}
+	}
+}
+
+// Carosel arrow color change //
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	font-size: 2rem;
+	color: #aaaaaa;
+
+	&:hover {
+		color: $theme-color !important;
+	}
+}
+
+.carousel-control-next, .carousel-control-prev {
+	position: relative;
+	height: 100%;
+	align-items: flex-end;
+	background: none;
+	width: 9%;
+}
+
+.carousel-btn {
+	height: 66% !important;
+}
+
+@include media-breakpoint-down(lg) {
+	.carousel-btn {
+		justify-content: space-between !important;
+	}
+
+	.carousel-control-next, .carousel-control-prev {
+		align-items: center !important;
+	}
+
+	.carousel-control-next {
+		right: -2rem;
+
+		@include media-breakpoint-down(md) {
+			right: 0 !important;
+		}
+	}
+
+	.carousel-control-prev {
+		left: -2rem;
+
+		@include media-breakpoint-down(md) {
+			left: 0 !important;
+		}
+	}
+}
+
+#portfolio {
+	img {
+		border-radius: 1rem;
+	}
+}
+
+.decoration-back {
+	position: absolute;
+	z-index: -1;
+	bottom: -0.5rem;
+
+	&.feedback {
+		bottom: 5rem;		
+	}
+
+	&.left {
+		left: -8rem;
+	}
+
+	&.right {
+		right: -8rem;
+	}
+	
+	img {
+		width: 18rem;
+		height: 17rem;
+	}
+}
+
+.decoration-obverse {
+	position: absolute;
+	bottom: 0rem;
+
+	&.feedback {
+		bottom: 5rem;		
+	}
+
+	&.left {
+		left: 0rem;
+	}
+
+	&.right {
+		right: 0;
+	}
+
+	img {
+		width: 10rem;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.decoration-back, .decoration-obverse {
+		display: none !important;
+	}
+}

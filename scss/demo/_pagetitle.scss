@@ -1,0 +1,63 @@
+
+/* ----------------------------------------------------------------
+
+	pagetitle.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for page title. Thanks!
+-----------------------------------------------------------------*/
+
+#page-title {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	p {
+		font-size: 1.125rem;
+		font-weight: 400;
+		color: #8a8382;
+	}
+
+	.sub-title {
+		p {
+			font-size: 5rem;
+			font-family: 'Great Vibes', cursive;
+		}
+	}
+
+
+	.title {
+		letter-spacing: 0.2rem;
+		h2 {
+			font-family: 'Cormorant Unicase', serif;
+		}
+	}
+}
+
+.breadcrumb {
+	display: flex;
+	font-size: $h6-font-size;
+	padding: 0.625rem 0;
+
+	li {
+		padding: 0 0.625rem;
+
+		&.active {
+			color: #ddcef5;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}

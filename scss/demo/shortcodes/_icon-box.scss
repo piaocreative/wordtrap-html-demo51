@@ -1,0 +1,40 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: icon-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Icon Box Styles
+-----------------------------------------------------------------*/
+
+
+.icon-box {
+    display: block;
+	margin-bottom: 1.5rem;
+
+	.icon-wrapper {
+		background-color: $theme-color;
+		padding: 1.5rem;
+		display: inline-block;
+		border-radius: 50%;
+		line-height: 1;
+
+		i {
+			color: $white;
+			font-size: 1.5rem;
+		}
+	}
+
+	span {
+		color: #c5c2c1;
+	}
+
+	.icon-header {
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		color: #8b8584;
+	}
+}
