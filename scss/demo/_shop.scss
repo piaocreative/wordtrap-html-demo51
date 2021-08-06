@@ -168,18 +168,15 @@
 .onnew,
 .onhot,
 .onsale {
-	font-family: "Roboto Slab",serif;
-	font-size: .8rem;
+	font-family: 'Great Vibes',cursive;
+	font-size: 1.875rem;
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: .5px;
-	text-transform: uppercase;
-	padding: .8rem 1rem;
 	position: absolute;
-	left: 1rem;
-	top: 1rem;
+	left: 1.5rem;
+	top: 2rem;
 	z-index: 2;
-	border-radius: 1.875rem;
 }
 
 .onhot {
@@ -187,24 +184,8 @@
 	color: $white;
 }
 
-.onnew {
-	background-color: #19d678;
-	color: $white;
-}
-
-.onbest {
-	background-color: #8b5ec7;
-	color: $white;
-}
-
-.ontop {
-	background-color: #5adbde;
-	color: $white;
-}
-
-.onsale {
-	background-color: #ffc83a;
-	color: $white;
+.onbest, .onnew, .onsale,.ontop {
+	color: $theme-color;
 }
 
 .banner-wishlist {

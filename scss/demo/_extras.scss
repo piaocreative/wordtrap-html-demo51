@@ -111,7 +111,15 @@ a {
 }
 
 .carousel-btn {
-	height: 66% !important;
+	// height: 66%;
+
+	@include media-breakpoint-up(lg) {
+		height: 122%;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: 66%;
+	}
 }
 
 @include media-breakpoint-down(lg) {
