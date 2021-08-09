@@ -16,7 +16,7 @@
 
 #footer {
 	position: relative;
-	font-size: $footer-size;
+	font-size: 0.9rem;
 
 	@include media-breakpoint-down(lg) {
 		.col-lg-8, .col-lg-4 {
