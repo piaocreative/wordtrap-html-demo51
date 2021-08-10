@@ -10,12 +10,11 @@
     <!-- Fonts
     ============================================= -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Abril+Fatface&display=swap&family=Great+Vibes&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     
     <!-- Fontawesome
 	============================================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"> -->
 
     <!-- Slick
     ============================================= -->
@@ -28,9 +27,9 @@
 
     <!-- Bootstrap JS 
     ===============================================-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Document Title
 	============================================= -->
@@ -52,106 +51,102 @@
 
                     <div class="row">
 
-                        <div class="">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
 
-                            <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="container-fluid p-0">
 
-                                <div class="container-fluid p-0">
-
-                                    <!-- Logo
+                                <!-- Logo
+                                ============================================= -->
+                                <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
+                                    <img src="images/saler-txt.png" alt="Saler Logo">
+                                </a>
+                                
+                                <!-- Navbar Toggler
+                                ============================================= -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                
+                                <!-- Navbar Collapse
+                                ============================================= -->
+                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+        
+                                    <!-- Top Links
                                     ============================================= -->
-                                    <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
-                                        <img src="images/saler-txt.png" alt="Saler Logo">
-                                    </a>
-                                    
-                                    <!-- Navbar Toggler
-                                    ============================================= -->
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    
-                                    <!-- Navbar Collapse
-                                    ============================================= -->
-                                    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
-            
-                                        <!-- Top Links
-                                        ============================================= -->
-                                        <div id="top-links">
-            
-                                            <ul class="nav navbar-nav">
+                                    <div id="top-links">
+        
+                                        <ul class="nav navbar-nav">
 
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link me-4 text-dark"><i class="fas fa-bars"></i></a>
-                                                </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link me-4 text-dark"><i class="fas fa-bars"></i></a>
+                                            </li>
 
-                                                <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">NEW YORK</a>
-                                                    <ul class="dropdown-menu">
-                                                    </ul>
-                                                </li>
-                                                
-                                                <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#" class="dropdown-item">EUR</a></li>
-                                                        <li><a href="#" class="dropdown-item">AUD</a></li>
-                                                        <li><a href="#" class="dropdown-item">GBP</a></li>
-                                                    </ul>
-                                                </li>
-            
-                                                <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                                    </ul>
-                                                </li>
-            
-                                            </ul>
-            
-                                        </div><!-- .top-links -->
-
-                                        <!-- Top Buttons
-                                        ============================================= -->
-                                        <div id="top-btns">
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">NEW YORK</a>
+                                                <ul class="dropdown-menu">
+                                                </ul>
+                                            </li>
                                             
-                                            <ul class="navbar-nav flex-row">
-            
-                                                <li class="nav-item">
-                                                    <div class="form-group ">
-                                                        <div class="input-group">
-                                                            <input class="form-control" id="search" name="search" type="text"/>
-                                                            <div class="input-group-addon text-primary">
-                                                                <i class="fas fa-search"></i> 
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link pt-1 text-dark"><i class="far fa-user"></i></a>
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a class="nav-link pt-1 text-dark" data-toggle="modal" href="#modalShoppingCart">
-                                                        <span data-cart-items="2">
-                                                          <i class="fas fa-shopping-cart"></i>
-                                                        </span>
-                                                      </a>
-                                                </li>
-            
-                                            </ul>
-            
-                                        </div><!-- #top-btns -->
-            
-                                    </div><!-- #header-right-col -->
-            
-                                </div>
-            
-                            </nav>
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                                </ul>
+                                            </li>
+        
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                                </ul>
+                                            </li>
+        
+                                        </ul>
+        
+                                    </div><!-- .top-links -->
 
-                        </div>
+                                    <!-- Top Buttons
+                                    ============================================= -->
+                                    <div id="top-btns">
+                                        
+                                        <ul class="navbar-nav flex-row">
+        
+                                            <li class="nav-item">
+                                                <div class="form-group ">
+                                                    <div class="input-group">
+                                                        <input class="form-control" id="search" name="search" type="text"/>
+                                                        <div class="input-group-addon text-primary">
+                                                            <i class="fas fa-search"></i> 
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link pt-1 text-dark"><i class="far fa-user"></i></a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link pt-1 text-dark" data-toggle="modal" href="#modalShoppingCart">
+                                                    <span data-cart-items="2">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                    </a>
+                                            </li>
+        
+                                        </ul>
+        
+                                    </div><!-- #top-btns -->
+        
+                                </div><!-- #header-right-col -->
+        
+                            </div>
+        
+                        </nav>
 
                     </div>
 
@@ -176,12 +171,8 @@
                     <div id="page-title" class="offset-lg-6 col-lg-3 col-md-12 d-flex align-items-center justify-content-center">
 
                         <div class="text-center">
-                            <div class="sub-title">
-                                <p class="text-primary mb-0">Woman</p>
-                            </div>
-                            <div class="title">
-                                <h2 class="text-secondary">Hair Care <br>& Styling</h2>
-                            </div>
+                            <p class="text-primary mb-0 sub-title">Woman</p>
+                            <h2 class="text-secondary title">Hair Care <br>& Styling</h2>
                             <p class="text-center mt-5">Let yourself be beautiful</p>
                         </div>
     
@@ -195,7 +186,7 @@
 
                     <div class="container clearfix">
 
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block title text-center">
                         
                             <h3 class="sub-title"> Our </h3>
         
@@ -205,18 +196,15 @@
 
                         <div class="row m-0">
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service1.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex justify-content-between align-items-baseline">
                                         <div class="service-title">Haircut</div>
                                         <span class="text-primary ps-5">from</span>
@@ -224,25 +212,20 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service2.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex bg-primary justify-content-between align-items-baseline">
                                         <div class="service-title text-white">Hair coloring</div>
                                         <span class="text-primary ps-2 text-white">from</span>
@@ -250,25 +233,20 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service3.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex justify-content-between align-items-baseline">
                                         <div class="service-title">Styling</div>
                                         <span class="text-primary ps-5">from</span>
@@ -276,25 +254,20 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service4.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex justify-content-between align-items-baseline">
                                         <div class="service-title">Straightening</div>
                                         <span class="text-primary ps-2">from</span>
@@ -302,25 +275,20 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service5.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex justify-content-between align-items-baseline">
                                         <div class="service-title">Hair extension</div>
                                         <span class="text-primary ps-1">from</span>
@@ -328,25 +296,20 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service6.png" class="img-fluid"></a>
                                     </div>
-
                                     <div class="service-btn">
                                         <a href="#" class="btn btn-default text-uppercase">see more</a> 
                                     </div>
-
                                     <div class="service-details d-flex justify-content-between align-items-baseline">
                                         <div class="service-title">Hair style</div>
                                         <span class="text-primary ps-5">from</span>
@@ -354,9 +317,7 @@
                                             <span>$30</span>
                                         </div>
                                     </div>
-
                                     <div class="service-boundary-point"><i class="fas fa-circle"></i></div>
-
                                 </div>
 
                             </div>
@@ -364,16 +325,13 @@
                             <div class="col-lg-6">
 
                                 <div class="service">
-
                                     <div class="service-image">
                                         <a href="#" ><img src="./images/service/service8.png" class="img-fluid"></a>
                                     </div>
-                                    
                                     <div class="service-onvisit text-center">
                                         <p class="m-0 fst-italic">40%</p>
                                         First<br>visit
                                     </div>
-
                                 </div>
                                 
                             </div>
@@ -389,13 +347,10 @@
                 <div class="section pt-0">
                     
                     <div class="ads ads1">
-
                         <div class="ads-bg">
                             <img src="images/ads/ads.png" alt="Ads Image" class="img-full w-100">
                         </div>
-    
                         <div class="ads-body offset-lg-6 col-lg-3 d-flex align-items-center">
-
                             <div class="py-6">
                                 <h3 class="text-primary">Our mission</h3>
                                 <h3 class="mb-3 heading-font">Is to take care of the 
@@ -403,9 +358,7 @@
                                     of your hair</h3>
                                 <p class="pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
                             </div>
-
                         </div>
-    
                     </div>
 
                 </div><!-- Ads -->
@@ -416,7 +369,7 @@
 
                     <div class="container">
 
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block text-center">
                         
                             <h3 class="sub-title"> Our Team</h3>
         
@@ -429,11 +382,9 @@
                             <div class="col-lg-4">
 
                                 <div class="team">
-
                                     <div class="team-image">
                                         <img src="./images/posts/team1.png" alt="Team Member" class="img-fluid">
                                     </div>
-                                    
                                     <div class="team-info text-end mt-3">
                                         <p class="team-name text-uppercase m-0 fw-bold">Diana Jones</p>
                                         <p class="team-detail">Hairdresser</p>
@@ -446,14 +397,12 @@
                                             <span class="ms-2">123 reviews</span>
                                         </div>
                                     </div>
-                                    
-                                    <!-- decoration -->
                                     <div class="decoration-back left">
                                         <img src="./images/decoration-left.png">
                                     </div>
                                     <div class="decoration-obverse left">
                                         <img src="./images/decoration-obverse-left.png" class="img-full">
-                                    </div><!-- decoration -->
+                                    </div>
 
                                 </div>
 
@@ -462,11 +411,9 @@
                             <div class="col-lg-4">
 
                                 <div class="team">
-
                                     <div class="team-image">
                                         <img src="./images/posts/team2.png" alt="Team Member" class="img-fluid">
                                     </div>
-
                                     <div class="team-info text-center mt-3">
                                         <p class="team-name text-uppercase m-0 fw-bold">Jone Jones</p>
                                         <p class="team-detail">Hairdresser</p>
@@ -479,7 +426,6 @@
                                             <span class="ms-2">123 reviews</span>
                                         </div>
                                     </div>
-
                                 </div>
 
                             </div>
@@ -487,11 +433,9 @@
                             <div class="col-lg-4">
 
                                 <div class="team">
-
                                     <div class="team-image">
                                         <img src="./images/posts/team3.png" alt="Team Member" class="img-fluid">
                                     </div>
-
                                     <div class="team-info text-left mt-3">
                                         <p class="team-name text-uppercase m-0 fw-bold">Amelia Smith</p>
                                         <p class="team-detail">Hairdresser stylist</p>
@@ -504,15 +448,12 @@
                                             <span class="ms-2">123 reviews</span>
                                         </div>
                                     </div>
-
-                                    <!-- decoration -->
                                     <div class="decoration-back right">
                                         <img src="./images/decoration-right.png">
                                     </div>
                                     <div class="decoration-obverse right">
                                         <img src="./images/decoration-obverse-right.png" class="img-full">
-                                    </div><!-- decoration -->
-
+                                    </div>
                                 </div>
 
                             </div>
@@ -530,23 +471,18 @@
                     <div class="appoint-image">
                         <img src="images/appoinment.png" class="img-full w-100">
                     </div>
-                    
                     <div class="appoint-detail d-flex align-items-center offset-md-6 col-lg-4">
-
                         <div class="py-6">
                             <h3 class="appoint-title text-white">Book an appointment</h3>
-    
                             <form id="appoint">
                                 <div class="d-flex gap-2">
                                     <input type="text" class="form-control  text-white" name="name" placeholder="Name">
                                     <input type="email" class="form-control text-white" name="email" placeholder="Email">
                                 </div>
-    
                                 <textarea maxlength="5000" placeholder="Message" rows="6" class="form-control text-white mt-2" name="message" id="contactFormMsg" required></textarea>
                                 <input type="submit" class="btn fw-bold btn-default bg-white mt-2 text-primary submit text-uppercase" value="Request an appoinment" data-loading-text="Loading...">
                             </form>
                         </div>
-
                     </div>
 
                 </div><!-- Appoint part -->
@@ -557,7 +493,7 @@
 
                     <div class="container">
 
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block text-center">
                         
                             <h3 class="sub-title">Feedback</h3>
         
@@ -578,7 +514,6 @@
                                             <img src="./images/feedback.png" class="img-full">
                                             <div class="feedback-boundary-point"><i class="fas fa-circle"></i></div>
                                         </div>
-
                                         <div class="feedback-details text-center bg-white p-8 col-lg-6">
                                             <h3 class="feedback-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
                                             <p class="px-3 mb-3 feedback-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -603,7 +538,6 @@
                                         <div class="feedback-image col-lg-6">
                                             <img src="./images/feedback.png" class="img-full">
                                         </div>
-
                                         <div class="feedback-details bg-white text-center p-8 col-lg-6">
                                             <h3 class="feedback-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
                                             <p class="px-3 mb-3 feedback-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -655,7 +589,7 @@
                     
                     <div class="container">
                         
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block text-center">
                         
                             <h3 class="sub-title">Hair</h3>
         
@@ -665,15 +599,13 @@
 
                         <div class="row m-0">
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">      
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product1.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product2.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -694,22 +626,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="onsale">Sale</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">       
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product2.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product3.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -730,22 +658,18 @@
                                             </div>
                                         </div>
                                     </div>   
-                                    
                                     <div class="onsale">Sale</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">     
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product3.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product4.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -766,22 +690,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="onbest">Best</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">       
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product4.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product5.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -802,22 +722,18 @@
                                             </div>
                                         </div>
                                     </div> 
-                                    
                                     <div class="onnew">New</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">         
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product5.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product1.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -838,21 +754,17 @@
                                             </div>
                                         </div>
                                     </div>  
-                                    
                                     <div class="onsale">Sale</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-md-12 col-lg-6">
 
-                                <div class="product">           
-    
+                                <div class="product">        
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product6.png" alt="Product Image" class="img-fluid"></a>
                                     </div>
-        
                                     <div class="product-details py-0 text-center">
                                         <h3 class="product-title m-0 heading-font"><a href="#">For thin and dry hair</a></h3>
                                         <div class="product-rating mb-1">
@@ -873,21 +785,17 @@
                                             </div>
                                         </div>
                                     </div>   
-                                    
                                     <div class="ontop">Top</div>
-        
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
-                                <div class="product">           
-    
+                                <div class="product">     
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product7.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>          
-        
+                                    </div>       
                                 </div>
 
                             </div>
@@ -904,7 +812,7 @@
 
                     <div class="container">
 
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block text-center">
                         
                             <h3 class="sub-title">Our</h3>
         
@@ -918,7 +826,7 @@
 
                                 <article class="post row gx-3">
 
-                                    <div class="col-lg-6 col-md-6">
+                                    <div class="col-md-6 col-lg-6 ">
                                         
                                         <div class="post-thumbnail">
                                             <a href="#"><img src="./images/posts/post1.png" class="img-full" alt="Our News"></a>
@@ -926,19 +834,16 @@
 
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6">
-
+                                    <div class="col-md-6 col-lg-6">
                                         <div class="post-content m-0">
                                             <div class="entry-meta mb-2">
                                                 <div class="entry-categories">
                                                     June 30, 2021
                                                 </div>
                                             </div>     
-
                                             <div class="entry-content">
                                                 <p class="mb-2">How to determine your hair type  and choose a care product</p>
                                             </div>
-                                            
                                             <a href="#" class="entry-link">View more</a>
                                         </div>
 
@@ -947,33 +852,22 @@
                                 </article> 
                                 
                                 <article class="post row gx-3">
-
-                                    <div class="col-lg-6 col-md-6">
-                                        
+                                    <div class="col-md-6 col-lg-6">
                                         <div class="post-thumbnail">
                                             <a href="#"><img src="./images/posts/post2.png" class="img-full" alt="Our News"></a>
                                         </div>
-
                                     </div>
-
-                                    <div class="col-lg-6 col-md-6">
-
+                                    <div class="col-md-6 col-lg-6">
                                         <div class="post-content m-0">
                                             <div class="entry-meta mb-2">
-                                                <div class="entry-categories">
-                                                    June 30, 2021
-                                                </div>
-                                            </div>     
-
+                                                <div class="entry-categories">June 30, 2021</div>
+                                            </div>   
                                             <div class="entry-content">
                                                 <p class="mb-2">How often do you need to go to the hairdresser to maintain a haircut</p>
                                             </div>
-                                            
                                             <a href="#" class="entry-link">View more</a>
                                         </div>
-
                                     </div>
-
                                 </article> 
 
                             </div>
@@ -981,17 +875,12 @@
                             <div class="col-lg-4">
 
                                 <article class="post">
-                                        
                                     <div class="post-thumbnail">
                                         <a href="#"><img src="./images/posts/post3.png" class="img-full" alt="Our News"></a>
                                     </div>
-
                                     <div class="post-content">
-                                        <div class="entry-title p-4">
-                                            <p class="m-0">We have opened <br>a new salon</p>
-                                        </div>
+                                            <p class="entry-title p-4 m-0">We have opened <br>a new salon</p>
                                     </div>
-
                                 </article> 
 
                             </div>
@@ -999,17 +888,12 @@
                             <div class="col-lg-4">
 
                                 <article class="post">
-                                        
                                     <div class="post-thumbnail">
                                         <a href="#"><img src="./images/posts/post4.png" class="img-full" alt="Our News"></a>
                                     </div>
-
                                     <div class="post-content">
-                                        <div class="entry-title p-4">
-                                            <p class="m-0">We have opened <br>a new salon</p>
-                                        </div>
+                                        <p class="entry-title p-4 m-0">We have opened <br>a new salon</p>
                                     </div>
-
                                 </article> 
 
                             </div>
@@ -1026,7 +910,7 @@
 
                     <div class="container">
 
-                        <div class="heading-block feture-title text-center">
+                        <div class="heading-block text-center">
                         
                             <h3 class="sub-title">Follow</h3>
         
@@ -1036,20 +920,20 @@
 
                         <div id="portfolio" class="row m-0">
                             
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-md-6 col-lg-3">
 
                                 <a class="d-block mb-5" href="#"><img src="./images/posts/portfolio1.png" class="img-fluid"></a>
 
                             </div>
 
-                            <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="col-md-3 col-lg-2">
                                 
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio2.png" class="img-fluid"></a>
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio4.png" class="img-fluid"></a>
 
                             </div>
 
-                            <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="col-md-3 col-lg-2">
                                 
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio3.png" class="img-fluid "></a>
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio5.png" class="img-fluid"></a>
@@ -1074,14 +958,14 @@
 
                             </div>
 
-                            <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="col-md-3 col-lg-2">
                                 
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio9.png" class="img-fluid"></a>
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio11.png" class="img-fluid"></a>
 
                             </div>
 
-                            <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="col-md-3 col-lg-2">
                                 
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio10.png" class="img-fluid "></a>
                                 <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio12.png" class="img-fluid"></a>
@@ -1096,7 +980,7 @@
                 
             </div>
 
-        </section>
+        </section><!-- content -->
 
         <!-- Footer
         ============================================= -->
@@ -1133,7 +1017,6 @@
                             <div class="d-lg-flex justify-content-between">
 
                                 <div>
-
                                     <div class="widget widget-links my-3">
                                         <div class="widget-content">
                                             <ul class="m-0 p-0 d-flex gap-3">
@@ -1155,14 +1038,12 @@
                                             </div>                                    
                                         </div>
                                     </div>
-                                    
                                 </div>
 
                                 <div class="widget widget-custom-html my-3">
                                     <div class="widget-content">
                                         <a class="mb-3 text-end text-primary fw-semi-bold text-uppercase">fallow us</a>
                                         <div class="widget widget-social">
-
                                             <div class="widget-content">
                                                 <ul class="social-icons d-flex align-items-center p-0">
                                                     <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
@@ -1172,7 +1053,6 @@
                                                     <li><a href="#" target="_blank" title="telegram"><i class="fab fa-twitter"></i></a></li>
                                                 </ul>
                                             </div>
-
                                         </div>
                                     </div>                                    
                                 </div>

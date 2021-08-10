@@ -51,11 +51,12 @@ a {
 
 	h3 {
 		font-family: 'Great Vibes', cursive;
+		font-weight: 500;
 	}
 }
 
 .about-banner-content {
-	padding-top: 15rem;
+	padding-top: 8rem;
 
 	@include media-breakpoint-down(lg) {
 		padding-top: 0rem;
@@ -111,7 +112,6 @@ a {
 }
 
 .carousel-btn {
-	// height: 66%;
 
 	@include media-breakpoint-up(lg) {
 		height: 122%;

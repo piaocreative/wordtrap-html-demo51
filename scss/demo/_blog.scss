@@ -12,12 +12,9 @@
 .post {
 	position: relative;
 	margin-bottom: 1.875rem;
+
 	@include media-breakpoint-down(lg) {
 		margin-top: 0 !important;
-
-		// .col-lg-4 {
-		// 	padding: 0 !important;
-		// }
 	}
 }
 

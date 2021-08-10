@@ -219,6 +219,7 @@
 				font-size: 3.25rem;
 				font-family: 'Great Vibes', cursive;
 				color: #504a4a;
+				font-weight: 500;
 
 				@include media-breakpoint-down(md) {
 					line-height: 3rem;
@@ -271,6 +272,7 @@
 
 	.appoint-title {
 		font-family: 'Cormorant Unicase', serif;
+		font-weight: 500;
 	}
 }
 
