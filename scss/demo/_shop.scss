@@ -128,8 +128,6 @@
 
 	.add-to-cart,
 	.add-to-wishlist {
-		background-color: #fdebe9;
-		border-radius: 4rem;
 		color: #5a5859;
 		display: flex;		
 		align-items: center;
@@ -147,6 +145,14 @@
 			background-color: $theme-color;
 			color: $white;
 		}
+	}
+
+	.add-to-wishlist {
+		background-color: #fdebe9;
+	}
+
+	.add-to-cart {
+		background-color: $white;
 	}
 
 	&:hover {
@@ -282,7 +288,6 @@
 	position: relative;
 	
 	.feedback-details {
-		
 		@include media-breakpoint-down(lg) {
 			padding: 0 !important;
 		}
@@ -304,7 +309,6 @@
 		}
 	
 		.feedback-rating {
-
 			i {
 				color: $theme-color;
 				font-size: 0.75rem;
@@ -315,7 +319,6 @@
 		.feedback-author {
 			font-size: 0.75rem;
 		}
-
 	}
 
 	.feedback-boundary-point {
@@ -336,5 +339,4 @@
 			bottom: 31%;
 		}
 	}
-
 }
