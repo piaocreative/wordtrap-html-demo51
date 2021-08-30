@@ -13,7 +13,12 @@
     position: relative;
     margin-bottom: 1.875rem;
 
+    .team-name, .team-detail {
+        line-height: 1;
+    }
+
     .team-detail, .team-rating {
+        font-size: 0.875rem;
         color: #b6b6b6;
     }
 
@@ -31,7 +36,6 @@
     }
 
     .team-rating {
-
         i {
             color:$theme-color;
         }

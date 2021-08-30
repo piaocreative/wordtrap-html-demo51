@@ -222,13 +222,14 @@
 			height: 100%;
 
 			h3 {
-				font-size: 3.25rem;
 				font-family: 'Great Vibes', cursive;
-				color: #504a4a;
+				font-size: 3rem;
 				font-weight: 500;
 
-				@include media-breakpoint-down(md) {
-					line-height: 3rem;
+				&:nth-child(2) {
+					font-size: 3.25rem;
+					color: #504a4a;
+					line-height: 1.2;
 				}
 			}
 
@@ -297,6 +298,7 @@
 			font-family: 'Cormorant Unicase', serif;
 			font-weight: 500;
 			color: $theme-color;
+			line-height: 1;
 	
 			span {
 				font-size: 2.825rem;
@@ -306,6 +308,7 @@
 	
 		.feedback-content {
 			color: #504a4a;
+			line-height: 1.5;
 		}
 	
 		.feedback-rating {
