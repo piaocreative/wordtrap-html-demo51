@@ -49,7 +49,7 @@
 
 	.service-details {
 		background-color: #fdf5f3;
-		padding: 1.5rem 2rem;
+		padding: 1.5rem;
 		margin-top: 0.3rem;
 		border-radius: 0.5rem;
 
@@ -103,6 +103,18 @@
 	&:hover {
 		.service-btn {
 			opacity: 1;
+		}
+
+		.service-details {
+			background-color: $theme-color;
+
+			span {
+				color: $white !important;
+			}
+
+			.service-title, .service-price {
+				color: $white;
+			}
 		}
 	}
 }
