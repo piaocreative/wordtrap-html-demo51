@@ -22,6 +22,7 @@
 		position: relative;
 
 		img {
+			width: 100%;
 			border-radius: 0.5rem;
 		}
 	}
@@ -63,6 +64,14 @@
 			font-family: 'Abril Fatface', cursive;
 			color: $theme-color;
 		}
+
+		@include media-breakpoint-down(xxl) {
+			padding: 1.5rem 0.5rem;
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding: 1.5rem;
+		}
 	}
 
 	.service-boundary-point {
@@ -74,6 +83,14 @@
 		color: $theme-color;
 		bottom: 4rem;
 		left: 45%;
+
+		@include media-breakpoint-down(xxl) {
+			bottom: 5.5rem;
+		}
+
+		@include media-breakpoint-down(lg) {
+			bottom: 4rem;
+		}
 	}
 
 	.service-onvisit {
@@ -81,12 +98,16 @@
 		position: absolute;
 		font-size: 3rem;
 		border-radius: 50%;
-		padding: 3rem 4.5rem;
+		padding: 2rem 3.5rem;
 		line-height: 3rem;
 		top: 3rem;
 		right: 7%;
 		background-color:$theme-color;
 		color: $white;
+
+		@include media-breakpoint-down(xl) {
+			top: 1rem;
+		}
 
 		@include media-breakpoint-down(md) {
 			font-size: 1.5rem;

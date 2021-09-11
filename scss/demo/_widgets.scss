@@ -169,10 +169,6 @@
 				color: #b8b6b6;
 				font-size: 1rem;
 
-				@include media-breakpoint-down(lg) {
-					text-align: left !important;
-				}
-
 				&.h4 {
 					line-height: 1.25;
 				}
