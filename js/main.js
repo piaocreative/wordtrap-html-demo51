@@ -36,4 +36,24 @@ $( document ).ready( function() {
         });
     } 
 
+    if ( $( '.feedbacks' ).length ) {
+        $( '.feedbacks' ).slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+        });
+
+        $(".feedback-prev").click(function(e){
+            e.preventDefault();
+            $(".feedbacks").slick("prev");
+        })
+
+        $(".feedback-next").click(function(e){
+            e.preventDefault();
+            $(".feedbacks").slick("next");
+        })
+    } 
+
 } );

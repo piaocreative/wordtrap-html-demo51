@@ -10,26 +10,6 @@
 	Extra Styles
 -----------------------------------------------------------------*/
 
-
-.shipping-banner {
-	position: absolute;
-	left: 4.375rem;
-	top: 5.625rem;	
-}
-
-.link-icon {
-	background-image: url(../images/icons/link.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 2.5625rem;
-	height: 2.5625rem;
-
-	&.black {
-		background-image: url(../images/icons/link_black.png);
-	}
-}
-
 a {
 	.link-icon {
 		@include transition(all 0.3s ease-in-out);
@@ -93,60 +73,6 @@ a {
 	}
 }
 
-// Carosel arrow color change //
-.carousel-control-prev-icon, .carousel-control-next-icon {
-	font-size: 2rem;
-	color: #aaaaaa;
-
-	&:hover {
-		color: $theme-color !important;
-	}
-}
-
-.carousel-control-next, .carousel-control-prev {
-	position: relative;
-	height: 100%;
-	align-items: flex-end;
-	background: none;
-	width: 9%;
-}
-
-.carousel-btn {
-	@include media-breakpoint-up(lg) {
-		height: 122%;
-	}
-
-	@include media-breakpoint-up(xl) {
-		height: 66%;
-	}
-}
-
-@include media-breakpoint-down(lg) {
-	.carousel-btn {
-		justify-content: space-between !important;
-	}
-
-	.carousel-control-next, .carousel-control-prev {
-		align-items: center !important;
-	}
-
-	.carousel-control-next {
-		right: -2rem;
-
-		@include media-breakpoint-down(md) {
-			right: 0 !important;
-		}
-	}
-
-	.carousel-control-prev {
-		left: -2rem;
-
-		@include media-breakpoint-down(md) {
-			left: 0 !important;
-		}
-	}
-}
-
 #portfolio {
 	img {
 		border-radius: 1rem;
@@ -159,7 +85,7 @@ a {
 	bottom: -0.5rem;
 
 	&.feedback {
-		bottom: 5rem;		
+		bottom: 4rem;		
 	}
 
 	&.left {
@@ -181,7 +107,7 @@ a {
 	bottom: 0rem;
 
 	&.feedback {
-		bottom: 5rem;		
+		bottom: 4rem;		
 	}
 
 	&.left {

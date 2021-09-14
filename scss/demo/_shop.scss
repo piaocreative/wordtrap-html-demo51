@@ -348,7 +348,7 @@
 		}
 		
 		@include media-breakpoint-down(lg) {
-			bottom: 31%;
+			display: none;
 		}
 	}
 }
