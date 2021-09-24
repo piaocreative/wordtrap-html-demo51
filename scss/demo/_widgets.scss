@@ -75,8 +75,6 @@
 		}
 	}
 
-
-
 	// Widget - Links
 	&.widget-links {
 		ul {
@@ -93,10 +91,6 @@
 					&:hover {
 						color: $theme-color;
 					}
-					
-					@include media-breakpoint-down(sm) {
-						font-size: 0.325rem;
-					}
 				}
 			}
 		}
@@ -111,9 +105,7 @@
 				margin: auto;
 			}
 		}
-	}
-
-	
+	}	
 
 	// Widget - Payments
 	&.widget-payment {
@@ -131,28 +123,14 @@
 				margin-right: 0.25rem;
 				width: 5rem;
 				height: 2rem;
-				background-color: #ffffff;
-				background-size: 80% auto;
-				background-repeat: no-repeat;
-				background-position: center;
+				background-color: $white;
+
+				img {
+					height: 100%;
+					width: auto;
+				}
 
 				@include border-radius(0.25rem);
-
-				&.visa {
-					background-image: url(../images/payments/visa.svg);
-				}
-
-				&.paypal {
-					background-image: url(../images/payments/paypal.svg);
-				}
-
-				&.express {
-					background-image: url(../images/payments/express.svg);
-				}
-
-				&.mastercard {
-					background-image: url(../images/payments/mastercard.svg);
-				}
 			}
 		}
 	}
@@ -219,7 +197,7 @@
 
 						input {
 							width: 100%;
-							border-radius: 1rem !important;
+							border-radius: 1rem;
 						}
 
 						button {
@@ -228,7 +206,7 @@
 						}
 
 						.input-group-append {
-							margin: 0 !important;
+							margin: 0;
 						}
 					}
 				}
@@ -238,14 +216,14 @@
 			::placeholder {
 				color: #c3c3c3;
 				opacity: 1; /* Firefox */
-			  }
+			}
 			  
 			:-ms-input-placeholder { /* Internet Explorer 10-11 */
-			color: #c3c3c3;
+				color: #c3c3c3;
 			}
 			
 			::-ms-input-placeholder { /* Microsoft Edge */
-			color: #c3c3c3;
+				color: #c3c3c3;
 			}
 		}
 	}

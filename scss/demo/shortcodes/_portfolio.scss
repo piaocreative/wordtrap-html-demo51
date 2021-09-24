@@ -1,0 +1,22 @@
+.portfolio {
+    border-radius: 1rem;
+    display: block;
+    margin-bottom: 2.375rem;
+    overflow: hidden;
+
+    img {
+        @include media-breakpoint-down(md) {
+            height: auto;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 10.75rem;
+    }
+
+    &.portfolio-2x {
+        @include media-breakpoint-up(md) {
+            height: 23.875rem;
+        }   
+    }
+}

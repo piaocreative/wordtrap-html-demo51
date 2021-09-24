@@ -1,0 +1,88 @@
+.testimonials {
+	height: auto;
+	position: relative;
+	z-index: 1;
+
+	@include media-breakpoint-up(lg) {
+		height: 33.25rem;
+	}	
+
+	.slick-slide {
+		@include media-breakpoint-down(lg) {
+			height: auto;
+		}
+	}
+}
+
+.testimonial {
+	position: relative;	
+
+	.testimonial-image {
+		height: 27.9375rem;
+		position: relative;
+
+		&::before {
+			content: "\f111";
+			background-color: $white;
+			border-radius: 50%;
+			color: $theme-color;
+			font-family: "Font Awesome 5 Free";
+			font-size: 0.65rem;
+			font-weight: 900;
+			line-height: 1;
+			padding: 0.8rem;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 2;			
+
+			@include translate3d(50%, -50%, 0);
+
+			@include media-breakpoint-down(lg) {
+				bottom: 0;
+				left: 50%;
+				top: initial;
+				right: initial;
+
+				@include translate3d(-50%, 50%, 0);
+			}
+		}
+	}
+	
+	.testimonial-details {
+		.testimonial-title {
+			font-size: 2.375rem;
+			font-family: $heading-font;
+			font-weight: 500;
+			color: $theme-color;
+			line-height: 1;
+	
+			span {
+				font-size: 2.825rem;
+				font-family: 'Playfair Display', serif;
+			}
+		}
+	
+		.testimonial-content {
+			color: #504a4a;
+			line-height: 1.5;
+		}
+	
+		.testimonial-rating {
+			i {
+				color: $theme-color;
+				font-size: 0.75rem;
+				padding: 0.1rem;
+			}
+		}
+	
+		.testimonial-author {
+			font-size: 0.75rem;
+		}
+	}
+
+	&.decoration-obverse,
+	&.decoration-back {
+		bottom: 0;		
+	}
+}

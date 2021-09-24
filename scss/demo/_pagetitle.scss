@@ -16,12 +16,6 @@
 -----------------------------------------------------------------*/
 
 #page-title {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	right: 0;
-	left: 0;
-
 	p {
 		font-size: 1.125rem;
 		font-weight: 400;
@@ -29,32 +23,13 @@
 	}
 
 	.sub-title {
+		display: block;
 		font-size: 5rem;
 		font-family: 'Great Vibes', cursive;
 	}
 
-
 	.title {
-		font-family: 'Cormorant Unicase', serif;
 		font-weight: 500;
 		line-height: 1.15;
-	}
-}
-
-.breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
-
-	li {
-		padding: 0 0.625rem;
-
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
-		}
 	}
 }

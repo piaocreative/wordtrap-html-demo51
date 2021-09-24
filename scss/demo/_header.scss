@@ -20,7 +20,7 @@
 
 	// Transparent header
 	&.transparent-header {
-		background-color: #857db8;
+		background-color: $white;
 		z-index: 199;
 
 		@include media-breakpoint-up(lg) {
@@ -33,17 +33,14 @@
 				top: -$header-height;
 				margin-bottom: -$header-height;
 			}
+
+			#navbarCollapse {
+				background-color: $white;
+				position: absolute;
+				top: 100%;
+				width: 100%;				
+			}
 		}			
-	}
-}
-
-#header-wrap {
-	padding-left: 4.375rem;
-	padding-right: 4.375rem;
-
-	@include media-breakpoint-down(lg) {
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 
@@ -58,6 +55,12 @@
 
 .navbar-toggler {
 	border-radius: 0;
+	border: 0;		
+	padding: 0;
+
+	@include media-breakpoint-up(lg) {
+		margin-right: 6.25rem;
+	}
 }
 
 .navbar-collapse {
@@ -79,25 +82,11 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 4.25rem;
-
-	@include media-breakpoint-up(lg) {
-		position: absolute;
-		left: 47%;
-	}
-
-	@include media-breakpoint-down(lg) {
-		position: relative;
-		left: 0;
-	}
-
 	img {
-		width: 6.5rem;
+		max-width: 6.375rem;
 		height: auto;
 	}
 }
-
-
 
 
 /* ----------------------------------------------------------------
@@ -163,9 +152,9 @@
 				font-size: 11px;
 				font-weight: 500;
 				border-radius: 50%;
-				border: 1px solid #fff;
+				border: 1px solid  $white;
 				background-color: #ff6f61;
-				color: #fff;
+				color:  $white;
 			}
 		}		
 	}
@@ -183,9 +172,7 @@
 	}
  
 	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-right: 1.875rem;		
-		}
+		padding-right: 1.875rem;
 	}
 
 	a.nav-link {

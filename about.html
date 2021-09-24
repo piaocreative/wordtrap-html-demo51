@@ -33,7 +33,7 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo15 | About</title>
+    <title>Demo51 | About</title>
 </head>
 <body id="demo51">
 
@@ -42,119 +42,163 @@
     <div id="wrapper" class="clearfix">
 
         <!-- Header
-		============================================= -->
+        ============================================= -->
         <header id="header" class="transparent-header">
-    
+
             <div id="header-wrap">
 
-                <div class="container">
+                <nav class="navbar navbar-light">
 
-                    <div class="row">
+                    <div class="container">
 
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        <!-- Navbar Toggler
+                        ============================================= -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <div class="container-fluid p-0">
+                        <div class="d-flex align-items-lg-center justify-content-start justify-content-lg-between flex-fill order-first order-lg-last">
 
-                                <!-- Logo
-                                ============================================= -->
-                                <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
-                                    <img src="images/saler-txt.png" alt="Saler Logo">
-                                </a>
-                                
-                                <!-- Navbar Toggler
-                                ============================================= -->
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                
-                                <!-- Navbar Collapse
-                                ============================================= -->
-                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
-        
-                                    <!-- Top Links
-                                    ============================================= -->
-                                    <div id="top-links">
-        
-                                        <ul class="nav navbar-nav">
+                            <!-- Top Links
+                            ============================================= -->
+                            <ul class="navbar-nav flex-row d-none d-lg-flex" id="top-links">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">New York</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Washington</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">EUR</a></li>
+                                        <li><a href="#" class="dropdown-item">AUD</a></li>
+                                        <li><a href="#" class="dropdown-item">GBP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- .top-links -->
 
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link me-4 text-dark"><i class="fas fa-bars"></i></a>
-                                            </li>
+                            <!-- Logo
+                            ============================================= -->
+                            <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                                <img src="images/logo.png" class="img-fluid" alt="Saler Logo">
+                            </a>
 
-                                            <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">NEW YORK</a>
-                                                <ul class="dropdown-menu">
-                                                </ul>
-                                            </li>
-                                            
-                                            <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#" class="dropdown-item">EUR</a></li>
-                                                    <li><a href="#" class="dropdown-item">AUD</a></li>
-                                                    <li><a href="#" class="dropdown-item">GBP</a></li>
-                                                </ul>
-                                            </li>
-        
-                                            <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                                </ul>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- .top-links -->
+                            <!-- Top Buttons
+                            ============================================= -->
+                            <ul class="navbar-nav flex-row d-none d-lg-flex" id="top-btns">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span data-cart-items="2">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>                                            
+                                    </a>
+                                </li>
+                            </ul><!-- #top-btns -->
 
-                                    <!-- Top Buttons
-                                    ============================================= -->
-                                    <div id="top-btns">
-                                        
-                                        <ul class="navbar-nav flex-row">
-        
-                                            <li class="nav-item">
-                                                <div class="form-group ">
-                                                    <div class="input-group">
-                                                        <input class="form-control" id="search" name="search" type="text"/>
-                                                        <div class="input-group-addon text-primary">
-                                                            <i class="fas fa-search"></i> 
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link pt-1"><i class="far fa-user"></i></a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a class="nav-link pt-1" data-toggle="modal" href="#modalShoppingCart">
-                                                    <span data-cart-items="2">
-                                                        <i class="fas fa-shopping-cart"></i>
-                                                    </span>
-                                                    </a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- #top-btns -->
-        
-                                </div><!-- #header-right-col -->
-        
-                            </div>
-        
-                        </nav>
+                        </div>
+
+                        
 
                     </div>
 
-                </div>                
+                </nav>
+
+                <!-- Navbar Collapse
+                ============================================= -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <div class="container">
+
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="navbar-nav flex-row d-flex d-lg-none py-1" id="top-links">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">New York</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Washington</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .top-links -->
+                    
+                        <!-- Primary Navigation
+                        ============================================= -->
+                        <ul id="primary-menu" class="navbar-nav">
+                            <li class="current nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                                  
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accessories</a>
+                            </li>                                    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul><!-- #primary-menu -->
+
+                        <!-- Top Buttons
+                        ============================================= -->
+                        <ul class="navbar-nav flex-row d-flex d-lg-none py-1" id="top-btns">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>                                            
+                                </a>
+                            </li>
+                        </ul><!-- #top-btns -->
+
+                    </div>
+
+                </div>
             
             </div><!-- #header-wrap -->
 
-        </header><!-- #header -->
+        </header><!-- #header -->    
 
         <!-- Content
 		============================================= -->
@@ -162,72 +206,83 @@
 
             <div class="content-wrap">
 
-                <!-- About Us
+                <!-- Banner
                 ============================================= -->
                 <section id="banner" class="about-banner">
 
                     <div class="container">
-                        
-                        <div class="section">
 
-                            <div class="row py-5">
+                        <div class="row">
 
-                                <div id="page-title" class="col-lg-4 d-flex position-relative align-items-center">
-    
-                                    <div class="text-center">
-                                        <p class="text-primary mb-0 sub-title" style="margin-bottom:-1.5rem;">Hi girls</p>
-                                        <h2 class="text-secondary title">About Us</h2>
-                                    </div>
-                
-                                </div>
-        
-                                <div class="about-banner-content offset-xl-3 col-lg-5">
-        
-                                    <h3 class="text-primary mb-0">Our mission</h3>
-                                    <h3 class="mb-3 heading-font text-secondary">Is to take care of the 
-                                        beauty and health 
-                                        of your hair</h3>
-                                    <p class="pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-        
-                                </div>
-    
-                            </div>
+                            <div class="col">
+
+                                <div id="page-title">
+                                    <span class="text-primary mb-4 sub-title">Hi girls</span>
+                                    <h2 class="text-secondary title mb-0">About Us</h2>
+                                </div> 
+
+                            </div>                            
 
                         </div>
                         
-                    </div>
-                    
+                    </div>                    
 
-                </section>
+                </section><!-- Banner -->
 
-                <div class="about-content">
+                <!-- About
+                ============================================= -->
+                <div class="about-content page-decoration">
 
                     <div class="container">
 
-                        <div class="row m-0">
+                        <div class="row">
 
-                            <div class="col-lg-6 obverse">
+                            <div class="col-lg-5">
 
-                                <img src="./images/about/about1.png" class="img-fluid" alt="About image">
+                                <img src="./images/about/about1.png" class="img-fluid" alt="About image" style="margin-top: 4.375rem;">
     
                             </div>
     
-                            <div class="col-lg-5 h-25 offset-xl-1">
-                                <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <div class="col-lg-5 offset-lg-1">
+
+                                <div class="heading-block">                    
+                                    <h3 class="sub-title">Our mission</h3>        
+                                    <h2 class="title">Is to take care of the beauty and health of your hair</h2>         
+                                </div>                                
+        
+                                <div class="about-content-spacer">        
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>        
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
                             </div>
 
-                            <div class=" col-xl-6 obverse pt-7 pe-7 pb-7">
+                        </div>
 
-                                <h3 class="text-primary">Our mission</h3>
-                                <h3 class=" mb-4 heading-font text-secondary">A family business that 
-                                    has been passed down 
-                                    from generation 
-                                    to generation</h3>
-                                <p class="pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </div>
+
+                </div><!-- About -->
+
+                <!-- Our History
+                ============================================= -->
+                <div class="section">
+
+                    <div class="container">
+                        
+                        <div class="row">
+
+                            <div class="col-xl-5">
+
+                                <div class="heading-block">                    
+                                    <h3 class="sub-title">Our history</h3>        
+                                    <h2 class="title">A family business that has been passed down from generation to generation</h2>         
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 
                             </div>
 
-                            <div class="col-lg-5 obverse offset-xl-1 pt-8">
+                            <div class="col-lg-6 offset-xl-1">
                                 
                                 <img src="./images/about/about2.png" class="img-fluid" alt="About image">
 
@@ -237,35 +292,30 @@
 
                     </div>
 
-                    <div class="section bg-success obverse">
+                </div><!-- Our History -->
 
-                        <div class="container">
+                <!-- Unique approach
+                ============================================= -->
+                <div class="section bg-success obverse">
 
-                            <div class="heading-block mb-3 feture-title text-center">
-                        
-                                <h3 class="sub-title">Unique appneach</h3>
-            
-                                <p class="title">Our working method</p> 
-            
+                    <div class="container">
+
+                        <div class="heading-block mb-3 feture-title text-center">                    
+                            <h3 class="sub-title">Unique appneach</h3>        
+                            <h2 class="title">Our working method</h2>
+                        </div>
+
+                        <div class="row m-0">
+
+                            <div class="col-lg-6">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
                             </div>
 
-                            <div class="row m-0">
+                            <div class="col-lg-6">
 
-                                <div class="col-lg-6">
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                                    </p>
-
-                                </div>
-
-                                <div class="col-lg-6">
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                    </p>
-
-                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 
                             </div>
 
@@ -273,287 +323,283 @@
 
                     </div>
 
-                </div><!-- about -->
+                </div><!-- Unique approach -->
 
                 <!-- ads
                 ============================================= -->
-                <div class="ads">
+                <div class="ads" style="height: 30.25rem;">
                     <div class="ads-bg">
-                        <img src="images/about/about3.png" alt="Ads Image" class="img-full">
+                        <div class="ads-bg-img" style="background-image: url(images/about/about3.png);"></div>
                     </div>
                 </div><!-- ads -->
 
-               <!-- Team
+                <!-- Team
                 ============================================= -->
                 <div class="section">
 
                     <div class="container">
 
-                        <div class="heading-block text-center">
-                        
-                            <h3 class="sub-title"> Our Team</h3>
-        
-                            <p class="title">Meet our experts</p> 
-        
+                        <div class="heading-block text-center">                        
+                            <h3 class="sub-title"> Our Team</h3>        
+                            <h2 class="title">Meet our experts</p>         
                         </div>
 
-                        <div class="row m-0">
+                        <div class="position-relative">
 
-                            <div class="col-lg-4">
+                            <div class="decoration-back left">
+                                <img src="./images/decoration-left.png">
+                            </div>
 
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="./images/posts/team1.png" alt="Team Member" class="img-fluid">
-                                    </div>
-                                    <div class="team-info text-end mt-3">
-                                        <p class="team-name text-uppercase mb-1 fw-bold">Diana Jones</p>
-                                        <p class="team-detail mb-2">Hairdresser</p>
-                                        <div class="team-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="ms-2">123 reviews</span>
+                            <div class="decoration-obverse left">
+                                <img src="./images/decoration-obverse-left.png" class="img-full">
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-lg-4">
+
+                                    <div class="team">
+                                        <div class="team-image">
+                                            <img src="./images/posts/team1.png" alt="Team Member" class="img-fluid">
+                                        </div>
+                                        <div class="team-info text-end mt-3">
+                                            <p class="team-name text-uppercase mb-1 fw-bold">Diana Jones</p>
+                                            <p class="team-detail mb-2">Hairdresser</p>
+                                            <div class="team-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="ms-2">123 reviews</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="decoration-back left">
-                                        <img src="./images/decoration-left.png">
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="team">
+                                        <div class="team-image">
+                                            <img src="./images/posts/team2.png" alt="Team Member" class="img-fluid">
+                                        </div>
+                                        <div class="team-info text-center mt-3">
+                                            <p class="team-name text-uppercase mb-1 fw-bold">Jone Jones</p>
+                                            <p class="team-detail mb-2">Hairdresser</p>
+                                            <div class="team-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="ms-2">123 reviews</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="decoration-obverse left">
-                                        <img src="./images/decoration-obverse-left.png" class="img-full">
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="team">
+                                        <div class="team-image">
+                                            <img src="./images/posts/team3.png" alt="Team Member" class="img-fluid">
+                                        </div>
+                                        <div class="team-info text-left mt-3">
+                                            <p class="team-name text-uppercase mb-1 fw-bold">Amelia Smith</p>
+                                            <p class="team-detail mb-2">Hairdresser stylist</p>
+                                            <div class="team-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="ms-2">123 reviews</span>
+                                            </div>
+                                        </div>                                        
                                     </div>
 
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
-
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="./images/posts/team2.png" alt="Team Member" class="img-fluid">
-                                    </div>
-                                    <div class="team-info text-center mt-3">
-                                        <p class="team-name text-uppercase mb-1 fw-bold">Jone Jones</p>
-                                        <p class="team-detail mb-2">Hairdresser</p>
-                                        <div class="team-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="ms-2">123 reviews</span>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <div class="decoration-back right">
+                                <img src="./images/decoration-right.png">
                             </div>
-
-                            <div class="col-lg-4">
-
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="./images/posts/team3.png" alt="Team Member" class="img-fluid">
-                                    </div>
-                                    <div class="team-info text-left mt-3">
-                                        <p class="team-name text-uppercase mb-1 fw-bold">Amelia Smith</p>
-                                        <p class="team-detail mb-2">Hairdresser stylist</p>
-                                        <div class="team-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="ms-2">123 reviews</span>
-                                        </div>
-                                    </div>
-                                    <div class="decoration-back right">
-                                        <img src="./images/decoration-right.png">
-                                    </div>
-                                    <div class="decoration-obverse right">
-                                        <img src="./images/decoration-obverse-right.png" class="img-full">
-                                    </div>
-                                </div>
-
+                            <div class="decoration-obverse right">
+                                <img src="./images/decoration-obverse-right.png" class="img-full">
                             </div>
 
                         </div>
 
                     </div>
 
-                </div><!-- team -->
+                </div><!-- Team -->
 
-               <!-- Appoint part
+                <!-- Appointment
                 ============================================= -->
-                <div class="appoint">
-
-                    <div class="appoint-image">
-                        <img src="images/appoinment.png" class="img-full w-100">
+                <div class="ads ads3">
+                    <div class="ads-bg">
+                        <div class="ads-bg-img" style="background-image: url(images/ads/ads_appoinment.png);"></div>
                     </div>
-                    <div class="appoint-detail d-flex align-items-center offset-md-6 col-lg-4">
-                        <div class="py-6">
-                            <h3 class="appoint-title text-white">Book an appointment</h3>
-                            <form id="appoint">
-                                <div class="d-flex gap-2">
-                                    <input type="text" class="form-control  text-white" name="name" placeholder="Name">
-                                    <input type="email" class="form-control text-white" name="email" placeholder="Email">
+                    <div class="ads-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 offset-sm-6">
+                                    <h3 class="text-white">Book an appointment</h3>
+                                    <form id="appoint-form">
+                                        <div class="row g-3 mb-3">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control text-white" name="name" placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control text-white" name="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <textarea maxlength="5000" placeholder="Message" rows="6" class="form-control text-white" name="message" id="contactFormMsg" required></textarea>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-light text-primary text-uppercase" value="Request an appointment" data-loading-text="Loading...">
+                                    </form>
                                 </div>
-                                <textarea maxlength="5000" placeholder="Message" rows="6" class="form-control text-white mt-2" name="message" id="contactFormMsg" required></textarea>
-                                <input type="submit" class="btn fw-bold btn-default bg-white mt-2 text-primary submit text-uppercase" value="Request an appoinment" data-loading-text="Loading...">
-                            </form>
-                        </div>
+                            </div>
+                        </div>                        
                     </div>
+                </div><!-- Appointment -->
 
-                </div><!-- Appoint part -->
-
-               <!-- Feedback part
+                <!-- Testimoinial
                 ============================================= -->
                 <div class="section bg-success">
 
                     <div class="container">
 
-                        <div class="heading-block text-center">
-                        
-                            <h3 class="sub-title">Feedback</h3>
-        
-                            <p class="title">From our favorite clients</p> 
-        
+                        <div class="heading-block text-center">                        
+                            <h3 class="sub-title">Feedback</h3>        
+                            <h2 class="title">From our favorite clients</p>         
                         </div>
                         
                         <div class="position-relative">
 
-                            <div class="feedbacks">
-                                
-                                <div class="d-lg-flex g-0 feedback">
-    
-                                    <div class="feedback-image col-lg-6">
-                                        <img src="./images/feedback.png" class="img-full">
-                                        <div class="feedback-boundary-point"><i class="fas fa-circle"></i></div>
-                                    </div>
-                                    <div class="feedback-details text-center bg-white p-8 col-lg-6">
-                                        <h3 class="feedback-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
-                                        <p class="px-3 mb-2 feedback-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <div class="feedback-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                            <div class="testimonials">
+
+                                <div class="testimonial">
+                                    <div class="row d-block d-lg-flex align-items-lg-center">    
+                                        <div class="col-lg-6">
+                                            <div class="testimonial-image">
+                                                <img src="./images/feedback.png" class="img-full">
+                                            </div>
                                         </div>
-                                        <p class="text-uppercase fw-bold mt-2 feedback-author">John Smith</p>
+                                        <div class="col-lg-4 offset-lg-1">
+                                            <div class="testimonial-details text-center bg-white">
+                                                <h3 class="testimonial-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
+                                                <p class="px-3 mb-2 testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <div class="testimonial-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p class="text-uppercase fw-bold mt-2 testimonial-author">John Smith</p>
+                                            </div>
+                                        </div>    
                                     </div>
-    
                                 </div>
 
-                                <div class="d-lg-flex g-0 feedback">
-    
-                                    <div class="feedback-image col-lg-6">
-                                        <img src="./images/feedback.png" class="img-full">
-                                        <div class="feedback-boundary-point"><i class="fas fa-circle"></i></div>
-                                    </div>
-                                    <div class="feedback-details text-center bg-white p-8 col-lg-6">
-                                        <h3 class="feedback-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
-                                        <p class="px-3 mb-2 feedback-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <div class="feedback-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                                <div class="testimonial">
+                                    <div class="row d-block d-lg-flex align-items-lg-center">    
+                                        <div class="col-lg-6">
+                                            <div class="testimonial-image">
+                                                <img src="./images/feedback.png" class="img-full">
+                                            </div>
                                         </div>
-                                        <p class="text-uppercase fw-bold mt-2 feedback-author">John Smith</p>
+                                        <div class="col-lg-4 offset-lg-1">
+                                            <div class="testimonial-details text-center bg-white">
+                                                <h3 class="testimonial-title mb-4"><span class="fst-italic">"</span> My Hair has never shone like this<span class="fst-italic"> "</span></h3>
+                                                <p class="px-3 mb-2 testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <div class="testimonial-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p class="text-uppercase fw-bold mt-2 testimonial-author">John Smith</p>
+                                            </div>
+                                        </div>    
                                     </div>
-    
                                 </div>
 
                             </div>
 
-                            <!-- decoration -->
-                            <div class="decoration-back feedback left" style="z-index: 1;">
-                                <img src="./images/feedback-decoration.png" style="width: 13rem !important;">
+                            <div class="decoration-back testimonial left" style="z-index: 0;">
+                                <img src="./images/feedback-decoration.png" style="width: 13rem;">
                             </div>
-                            <div class="decoration-obverse feedback left">
+                            <div class="decoration-obverse testimonial left">
                                 <img src="./images/feedback-decoration1.png" class="img-full">
-                            </div><!-- decoration -->
+                            </div>
 
-                            <div class="d-flex gap-7 mt-3 w-100 justify-content-center">
-                                <a href="#" class="feedback-prev fs-5"><i class="fas fa-arrow-left"></i></a>
-                                <a href="#" class="feedback-next fs-5"><i class="fas fa-arrow-right"></i></a>
+                            <div class="d-flex gap-5 mt-3 w-100 justify-content-center">
+                                <a href="#" class="testimonial-prev fs-5"><i class="fas fa-arrow-left"></i></a>
+                                <a href="#" class="testimonial-next fs-5"><i class="fas fa-arrow-right"></i></a>
                             </div>
                             
                         </div>
 
                     </div>
                     
-                </div><!-- Feedback -->
+                </div><!-- Testimonial -->
 
-                 <!-- Portfolio
+                <!-- Portfolio
                 ============================================= -->
                 <div class="section">
 
                     <div class="container">
 
-                        <div class="heading-block text-center">
-                        
-                            <h3 class="sub-title">Follow</h3>
-        
-                            <p class="title">Our Potfolio</p> 
-        
+                        <div class="heading-block text-center">                        
+                            <h3 class="sub-title">Follow</h3>        
+                            <h2 class="title">Our Potfolio</p>        
                         </div>
 
-                        <div id="portfolio" class="row m-0">
+                        <div class="row">
                             
-                            <div class="col-md-6 col-lg-3">
-
-                                <a class="d-block mb-5" href="#"><img src="./images/posts/portfolio1.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-6 col-xl-3">
+                                <a class="portfolio portfolio-2x" href="#"><img src="./images/portfolio/portfolio1.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-md-3 col-lg-2">
-                                
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio2.png" class="img-fluid w-100"></a>
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio4.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-3 col-xl-2">                                
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio2.png" class="img-full"></a>
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio4.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-md-3 col-lg-2">
-                                
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio3.png" class="img-fluid w-100"></a>
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio5.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-3 col-xl-2">                                
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio3.png" class="img-full"></a>
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio5.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-lg-5">
-
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio6.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-6 col-xl-5">
+                                <a class="portfolio portfolio-2x" href="#"><img src="./images/portfolio/portfolio6.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-lg-5">
-
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio7.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-6 col-xl-5">
+                                <a class="portfolio portfolio-2x" href="#"><img src="./images/portfolio/portfolio7.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
-
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio8.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-6 col-xl-3">
+                                <a class="portfolio portfolio-2x" href="#"><img src="./images/portfolio/portfolio8.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-md-3 col-lg-2">
-                                
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio9.png" class="img-fluid w-100"></a>
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio11.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-3 col-xl-2">                                
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio9.png" class="img-full"></a>
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio11.png" class="img-full"></a>
                             </div>
 
-                            <div class="col-md-3 col-lg-2">
-                                
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio10.png" class="img-fluid w-100"></a>
-                                <a class="d-block mb-3" href="#"><img src="./images/posts/portfolio12.png" class="img-fluid w-100"></a>
-
+                            <div class="col-md-3 col-lg-2">                                
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio10.png" class="img-full"></a>
+                                <a class="portfolio" href="#"><img src="./images/portfolio/portfolio12.png" class="img-full"></a>
                             </div>
 
                         </div>
@@ -566,7 +612,7 @@
             
         </section><!-- content -->
 
-       <!-- Footer
+        <!-- Footer
         ============================================= -->
         <footer id="footer" class="bg-success">
             
@@ -574,34 +620,35 @@
 
                 <div class="container">
 
-                    <div class="row m-0">
+                    <div class="row">
 
-                        <div class="col-lg-8  pe-5 border-end">
+                        <div class="col-lg-8 col-xl-7">
 
-                            <div class="d-lg-flex">
+                            <div class="row pb-3">
 
-                                <div class="col-lg-4">
+                                <div class="col-lg-5">
                                     <div class="widget widget-custom-html text-center text-lg-start">
                                         <P class="widget-title text-primary text-uppercase fw-semi-bold m-0">call now</P>
                                         <div class="widget-content">
                                             <a href="callto:1234567890" class="mb-2 h4 heading-font text-secondary" style="letter-spacing: 0.15rem;">123-456-7890</a>
-                                            <p class="mb-0">Lorem ipsum dolor sit amet,</p>
-                                            <p class="mb-0">consectetur adipiscing elit.</p>
-                                            <p class="mb-0">Phasellus blandit massa enim. </p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. </p>
                                         </div>                                    
                                     </div>
                                 </div>
 
-                                <div class="col-lg-8">
-                                    <img src="./images/footermap.png" class="img-fluid" alt="Footer Map">
+                                <div class="col-lg-7">
+                                    <div id="map">
+                                        <img src="./images/footermap.png" class="img-full" alt="Footer Map">
+                                    </div>                                    
                                 </div>
 
                             </div>
 
-                            <div class="d-lg-flex justify-content-between">
+                            <div class="row py-4">
 
-                                <div>
-                                    <div class="widget widget-links my-3">
+                                <div class="col d-flex">
+
+                                    <div class="widget widget-links">
                                         <div class="widget-content">
                                             <ul class="m-0 p-0 d-flex gap-3 justify-content-center justify-content-lg-start">
                                                 <li><a href="#" class="fw-semi-bold">About Us</a></li>
@@ -610,10 +657,26 @@
                                             </ul>
                                         </div>                                    
                                     </div>
-
-                                    <div class="widget widget-payment mb-lg-0">
+                                    
+                                    <div class="widget widget-links ms-auto">
                                         <div class="widget-content">
-                                            <div class="payments d-flex gap-1 justify-content-center justify-content-lg-start">
+                                            <ul class="m-0 p-0 d-flex gap-3 justify-content-center justify-content-lg-end">
+                                                <li><a href="#" class="fw-semi-bold">Follow Us</a></li>
+                                            </ul>
+                                        </div>                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row py-3">
+
+                                <div class="col d-flex align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-between">
+
+                                    <div class="widget widget-payment">
+                                        <div class="widget-content">
+                                            <div class="payments d-flex gap-1 align-items-center justify-content-center justify-content-lg-start">
                                                 <span class="payment-icon"><img src="images/payments/express.png" alt="American Express" class="img-fluid"></span>
                                                 <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa" class="img-fluid"></span>
                                                 <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal" class="img-fluid"></span>
@@ -622,31 +685,31 @@
                                             </div>                                    
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="widget widget-custom-html my-3">
-                                    <p class="widget-title mb-3 text-center text-lg-end text-primary fw-semi-bold text-uppercase">fallow us</p>
-                                    <div class="widget-content">
-                                        <div class="widget widget-social">
-                                            <div class="widget-content">
-                                                <ul class="social-icons d-flex align-items-center p-0 justify-content-center justify-content-lg-start">
-                                                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-youtube"></i></a></li>
-                                                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-google-plus-g"></i></a></li>
-                                                    <li><a href="#" target="_blank" title="telegram"><i class="fab fa-twitter"></i></a></li>
-                                                </ul>
-                                            </div>
+                                    <div class="widget widget-social py-5 py-lg-0">
+                                        <div class="widget-content">
+                                            <ul class="social-icons d-flex align-items-center p-0 justify-content-center justify-content-lg-start">
+                                                <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-youtube"></i></a></li>
+                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-google-plus-g"></i></a></li>
+                                                <li><a href="#" target="_blank" title="telegram"><i class="fab fa-twitter"></i></a></li>
+                                            </ul>
                                         </div>
-                                    </div>                                    
+                                    </div>
+
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <div class="col-lg-4 ps-5">
-                            <div class="widget widget-custom-html text-center text-lg-start">
+                        <div class="col-lg-1 position-relative d-none d-xl-block">
+                            <div class="divider"></div>
+                        </div>
+
+                        <div class="col-lg-4 d-flex flex-column">
+                            <div class="widget widget-custom-html text-center text-lg-start order-0">
                                 <P class="widget-title text-primary text-uppercase fw-semi-bold m-0">our address</P>
                                 <div class="widget-content">
                                     <h4 class="mb-1 text-secondary heading-font">New York</h4>
@@ -655,16 +718,16 @@
                                 </div>                                    
                             </div>
 
-                            <p id="copyrights" class="my-2 text-center text-lg-start">&copy; Copyrights 2021</p>   
+                            <p id="copyrights" class="text-center text-lg-start order-last order-lg-1">&copy; Copyrights 2021</p>   
                             
-                            <div class="widget widget-subscribe text-center text-lg-start">
+                            <div class="widget widget-subscribe text-center text-lg-start order-2">
                                 <div class="widget-content">
-                                    <P class="text-primary fw-semi-bold mb-2 fw-semi-bold text-uppercase">Subscribe to our the free newslettr</P>
+                                    <P class="text-primary fw-semi-bold mb-3 fw-semi-bold text-uppercase">Subscribe to our the free newslettr</P>
                                     <form id="widget-subscribe-form" action="#" method="post">
                                         <div class="input-group">
-                                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email text-dark border-0" placeholder="Email">
+                                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-sm bg-light required email text-dark border-0" placeholder="Email">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary text-white text-uppercase" type="submit">Subscribe</button>
+                                                <button class="btn btn-primary btn-sm text-white text-uppercase" type="submit">Subscribe</button>
                                             </div>
                                         </div>
                                     </form>
@@ -679,7 +742,7 @@
 
             </div>
 
-        </footer><!-- footer -->
+        </footer><!-- Footer -->
         
     </div>
 
@@ -691,6 +754,7 @@
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Thmee JS -->
     <script src="./js/main.js"></script>
 
 </body>

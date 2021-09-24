@@ -36,23 +36,24 @@ $( document ).ready( function() {
         });
     } 
 
-    if ( $( '.feedbacks' ).length ) {
-        $( '.feedbacks' ).slick({
+    if ( $( '.testimonials' ).length ) {
+        $( '.testimonials' ).slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
             arrows: false,
+            adaptiveHeight: true
         });
 
-        $(".feedback-prev").click(function(e){
+        $(".testimonial-prev").click(function(e){
             e.preventDefault();
-            $(".feedbacks").slick("prev");
+            $(".testimonials").slick("prev");
         })
 
-        $(".feedback-next").click(function(e){
+        $(".testimonial-next").click(function(e){
             e.preventDefault();
-            $(".feedbacks").slick("next");
+            $(".testimonials").slick("next");
         })
     } 
 

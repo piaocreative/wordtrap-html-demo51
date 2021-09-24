@@ -21,29 +21,15 @@
 		display: block;
 		font-family: 'Great Vibes', cursive;
 		color: $theme-color;
-		margin-bottom: -1.5rem;
 		font-weight: 500;
+		margin-bottom: 0;
 	}
 	
 	.title {
 		font-size: 3.25rem;
 		color: $secondary;
-		font-family: 'Cormorant Unicase', serif;
+		font-family: $heading-font;
 		font-weight: 500;
-		line-height: 5rem;
-	}
-
-	@include media-breakpoint-down(sm) {
-		.sub-title {
-			margin-bottom: 0;
-		}
-
-		.title {
-			line-height: 2.5rem;
-		}
-	}
-	
-	@include media-breakpoint-down(lg) {
-		margin-bottom: 0.5rem;
+		line-height: 3.75rem;
 	}
 }

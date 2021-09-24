@@ -4,41 +4,27 @@
 
 -----------------------------------------------------------------*/
 
-.contact-banner {
-    .sub-title {
-        p {
-            font-size: 3.75rem !important;
-            line-height: 4rem;
-        }
+.contact-content {
+    margin-bottom: $section-spacer;
+    padding-top: 10.25rem;
+    position: relative;
+
+    &.page-decoration {
+        &::before {
+            background-position: bottom;
+        }        
     }
 
-    p {
-        font-size: 1.1rem;
-        line-height: 2rem;
-        color: #8b8584;
-    }
-
-    @include media-breakpoint-down(lg) {
-        .container {
-            padding: 0 !important;
-        }
-
-        .col-lg-6 {
-            padding: 0 !important;
-
-            p {
-                padding: 0 !important;
-            }
-        }
-    }
-}
-
-#contact-info {
-    h5 {
-        color: #504a4a;
-
-        @include media-breakpoint-down(lg) {
-            margin: 1rem !important;
+    @include media-breakpoint-up(lg) {
+        &::after {
+            content: "";
+            background-color: rgba($theme-color, .29);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            display: block;
+            height: 12.625rem;
+            width: 1px;        
         }
     }
 }

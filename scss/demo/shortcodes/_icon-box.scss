@@ -12,18 +12,19 @@
 
 .icon-box {
     display: block;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.875rem;
 
 	.icon-wrapper {
 		background-color: $theme-color;
-		padding: 1.5rem;
 		display: inline-block;
 		border-radius: 50%;
-		line-height: 1;
+		width: 3.375rem;
+		height: 3.375rem;		
 
 		i {
 			color: $white;
 			font-size: 1.5rem;
+			line-height: 3.375rem;
 		}
 	}
 
@@ -32,9 +33,15 @@
 	}
 
 	.icon-header {
-		display: flex;
-		align-items: center;
-		line-height: 1;
-		color: #8b8584;
+		span {
+			color: #a0a0a0;
+			line-height: 1;
+		}
+
+		p {
+			font-size: 1rem;
+			line-height: 1.875rem;
+			margin-bottom: 0;
+		}
 	}
 }

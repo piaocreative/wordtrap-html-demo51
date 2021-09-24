@@ -19,7 +19,8 @@
 /* Category
 -----------------------------------------------------------------*/
 .category {
-	position: relative;		
+	position: relative;	
+
 	@include transition(all 0.5s ease-in-out);
 
 	.category-desc {
@@ -34,20 +35,12 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
-	margin-bottom: 2.875rem;
+	margin-bottom: 1.875rem;
 	position: relative;
-	
-	@include media-breakpoint-down(lg) {
-		margin-bottom: 0.875rem;
-	}
 
 	.product-image {
 		position: relative;
-
-		img {
-			width: 100%;
-			border-radius: 1rem;
-		}
+		text-align: center;
 
 		> a:nth-of-type(2) {
 			opacity: 0;
@@ -55,6 +48,7 @@
 			z-index: -1;
 			top: 0;
 			left: 0;
+
 			@include transition(all 0.3s ease-in-out);
 		}
 	}
@@ -123,6 +117,7 @@
 		grid-gap: 0.5rem;
 		padding: .875rem .375rem;
 		z-index: 2;
+
 		@include transition(all 0.3s ease-in-out);
 	}
 
@@ -172,8 +167,7 @@
 			content: "";
 			width: 100%;
 			height: 100%;
-			background-color: #dadada;
-			opacity: 0.3;
+			background-color: rgba(#dadada, 0.3);
 		}
 	}
 }
@@ -213,142 +207,111 @@
 /* Ads
 -----------------------------------------------------------------*/
 .ads {
-    position: relative;
-    display: block;
+	position: relative;
+	display: block;
+	margin-bottom: 1.875rem;
 
 	.ads-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 
-		img {
-			height: 35rem;
+		.ads-bg-img {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
+	}
+
+	.ads-body {
+		position: relative;
+		z-index: 1;
 	}
 
 	&.ads1 {
-		.ads-body {
-			position: absolute;
-			left: 0;
-			top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		@include media-breakpoint-up(lg) {			
 			height: 100%;
+		}
+
+		.ads-bg {
+			border-radius: 0.5rem;
+		}
+
+		.ads-body {
+			padding: 2.8125rem 2.375rem;
+		}
+	}
+
+	&.ads2 {
+		h3 {
+			font-family: 'Great Vibes', cursive;
+			font-size: 3rem;
+			font-weight: 500;
+
+			&:nth-child(2) {
+				font-size: 3.25rem;
+				color: #504a4a;
+				line-height: 1.2;
+			}
+		}
+
+		p {
+			color: #736c6c;
+		}		
+
+		.ads-body {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+	}
+
+	&.ads3 {
+		.ads-body {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
 
 			h3 {
-				font-family: 'Great Vibes', cursive;
-				font-size: 3rem;
+				font-family: $heading-font;
 				font-weight: 500;
-
-				&:nth-child(2) {
-					font-size: 3.25rem;
-					color: #504a4a;
-					line-height: 1.2;
-				}
-			}
-
-			p {
-				font-size: 1.125rem;
-				color: #736c6c;
-			}
-
-			@include media-breakpoint-down(lg) {
-				padding: 2rem !important;
+				line-height: 1;
+				margin-bottom: 1.5rem;
 			}
 		}
 	}
-}
 
-.appoint {
-	position: relative;
+	&.ads4 {
+		border-radius: 1rem;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 
-	.appoint-image {
-		img {
-			height: 35rem !important;
-		}
-	}
-	
-	.appoint-detail {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		padding-left: 1rem;
-		padding-right: 1rem;
-
-		input, textarea {
-			background-color: #d87d91;
+		@include media-breakpoint-up(md) {			
+			height: 100%;
 		}
 
-		input {
-			padding: 1.2rem 1.5rem;
-			font-size: .875rem;
-			font-weight: 300;
-			line-height: 1;
-		}
+		.ads-body {
+			padding: 7.5rem 3.125rem;
 
-		.submit {
-			padding: 1.4rem 3rem
-		}
-	}
-
-	.appoint-title {
-		font-family: 'Cormorant Unicase', serif;
-		font-weight: 500;
-	}
-}
-
-/* Feedback
------------------------------------------------------------------*/
-.feedback {
-	position: relative;
-	
-	.feedback-details {
-		@include media-breakpoint-down(lg) {
-			padding: 0 !important;
-		}
-
-		.feedback-title {
-			font-size: 2.375rem;
-			font-family: 'Cormorant Unicase', serif;
-			font-weight: 500;
-			color: $theme-color;
-			line-height: 1;
-	
-			span {
-				font-size: 2.825rem;
-				font-family: 'Playfair Display', serif;
+			h3 {
+				font-family: $heading-font;
+				font-size: 2.625rem;
+				font-weight: 500;
+				line-height: 1;
+				margin-bottom: 1.5rem;
 			}
-		}
-	
-		.feedback-content {
-			color: #504a4a;
-			line-height: 1.5;
-		}
-	
-		.feedback-rating {
-			i {
-				color: $theme-color;
-				font-size: 0.75rem;
-				padding: 0.1rem;
-			}
-		}
-	
-		.feedback-author {
-			font-size: 0.75rem;
-		}
-	}
-
-	.feedback-boundary-point {
-		font-size: 0.65rem;
-		position: absolute;
-		padding: 0.8rem;
-		background-color:$white;
-		border-radius: 50%;
-		color: $theme-color;
-		bottom: 47%;
-		left: 48.5%;
-
-		@include media-breakpoint-down(md) {
-			bottom: 55%;
-		}
-		
-		@include media-breakpoint-down(lg) {
-			display: none;
 		}
 	}
 }

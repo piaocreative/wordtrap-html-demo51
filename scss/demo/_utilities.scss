@@ -12,9 +12,9 @@
 .heading-font { font-family: $heading-font !important; }
 
 // Font Weight
+.fw-medium { font-weight: 500 !important; }
 .fw-semi-bold { font-weight: 600 !important; }
 .fw-black { font-weight: 900 !important; }
-.fw-low-bold { font-weight: 400 !important;}
 
 
 /* ----------------------------------------------------------------
@@ -51,16 +51,6 @@ img {
 	position: relative;
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
-
-	@include media-breakpoint-down(lg) {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-		
-		.row {
-			padding: 0 !important;
-		}
-
-	}
 }
 
 .section-padding-top { padding-top: $section-spacer; }

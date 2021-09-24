@@ -20,16 +20,7 @@
     .team-detail, .team-rating {
         font-size: 0.875rem;
         color: #b6b6b6;
-    }
-
-    @include media-breakpoint-down(lg) {
-
-        text-align: center;
-        
-        .team-info {
-            text-align: center !important;
-        }
-    }
+    }    
 
     .team-name {
         color: #5c5656;
@@ -39,6 +30,13 @@
         i {
             color:$theme-color;
         }
+    }
 
+    @include media-breakpoint-down(lg) {
+        text-align: center;
+        
+        .team-info {
+            text-align: center;
+        }
     }
 }
