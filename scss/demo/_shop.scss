@@ -34,30 +34,58 @@
 
 /* Product
 -----------------------------------------------------------------*/
-.product {
-	margin-bottom: 1.875rem;
+.product {	
 	position: relative;
 
-	.product-image {
+	.product-image {		
 		position: relative;
-		text-align: center;
+		text-align: center;		
+
+		> a {
+			background-color: white;
+			display: block;
+			position: relative;		
+			padding-top: 2.8125rem;	
+			width: 100%;
+
+			&::before {
+				content: "";
+				background-image: url(../images/shop/product_bg_effect.png);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: top center;
+				display: block;
+				width: 11rem;
+				height: 9.625rem;
+				position: absolute;
+				left: 50%;
+				top: 2.8125rem;
+				
+				@include translateX(-50%);
+			}			
+
+			img {
+				position: relative;
+				max-height: 18.125rem;
+			}
+		}
 
 		> a:nth-of-type(2) {
 			opacity: 0;
 			position: absolute;
 			z-index: -1;
 			top: 0;
-			left: 0;
+			left: 0;			
 
 			@include transition(all 0.3s ease-in-out);
 		}
 	}
 
 	.product-details {
-		padding: 1rem;
-		position: absolute;
-		bottom: 0;
-		z-index: 3;
+		padding: 1.875rem 1rem;
+		// position: absolute;
+		// bottom: 0;
+		// z-index: 3;
 		width: 100%;
 	}
 
@@ -160,6 +188,13 @@
 			background-color: $white;
 			color: #5a5859;
 		}
+
+		.product-image {
+			> a:nth-of-type(2) {
+				opacity: 1;
+				z-index: 1;
+			}
+		}
 		
 		&:after {
 			position: absolute;
@@ -167,7 +202,8 @@
 			content: "";
 			width: 100%;
 			height: 100%;
-			background-color: rgba(#dadada, 0.3);
+			background-color: #fdf5f3;
+			z-index: -1;
 		}
 	}
 }
@@ -184,7 +220,7 @@
 	letter-spacing: .5px;
 	position: absolute;
 	left: 1.5rem;
-	top: 2rem;
+	top: 0;
 	z-index: 2;
 }
 
